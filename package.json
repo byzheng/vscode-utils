@@ -3,6 +3,11 @@
   "displayName": "VSCode Utils",
   "description": "A collection of utility commands for Visual Studio Code.",
   "version": "0.0.1",
+  "publisher": "byzheng",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/byzheng/vscode-utils.git"
+  },
   "engines": {
     "vscode": "^1.107.0"
   },
