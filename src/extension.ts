@@ -64,6 +64,9 @@ export function activate(context: vscode.ExtensionContext) {
 		setTimeout(() => {
 			rTerminal!.sendText(`setwd("${rPath}")`);
 			vscode.window.setStatusBarMessage(`R working directory set to: ${fileDir}`, 3000);
+			
+			// Return focus to the editor
+			vscode.window.showTextDocument(editor.document);
 		}, delay);
 	});
 
